@@ -8,10 +8,11 @@ const HighlightsStyle = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 25px;
-  width: 100%;
-  height: 400px;
+ 
+  min-height: 400px;
   font-family: 'GandhiSansRegular';
  
+  
 `;
 
 const TextHighlightsStyled = styled.p`
@@ -22,13 +23,13 @@ const TextHighlightsStyled = styled.p`
 `;
 
 const Highlights = ({ textHighlights, Backgroud }) => {
-    return (
-        <HighlightsStyle $Backgroud={Backgroud}>
-            <TextHighlightsStyled >
-                {textHighlights}
-            </TextHighlightsStyled>
-        </HighlightsStyle>
-    );
+  return (
+    <HighlightsStyle $Backgroud={Backgroud}>
+      <TextHighlightsStyled >
+        {textHighlights}
+      </TextHighlightsStyled>
+    </HighlightsStyle>
+  );
 };
 
 export default Highlights;

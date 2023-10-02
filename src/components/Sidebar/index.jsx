@@ -2,10 +2,9 @@ import { styled } from "styled-components"
 import ItemNavigation from "../ItemNavigation"
 const SidebarStyled = styled.ul`
 list-style: none;
-max-width: 250px ;
+width: 280px ;
 padding: 0;
 margin: 0;
-
 `
 
 
